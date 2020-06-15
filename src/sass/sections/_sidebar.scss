@@ -2,4 +2,15 @@
   position: fixed;
   left: 0;
   width: 30%;
+
+  ul {
+    list-style-type: none;
+    
+    li {
+      
+      img {
+        max-height: 15px;
+      }
+    }
+  }
 }

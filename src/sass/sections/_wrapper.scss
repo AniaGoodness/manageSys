@@ -1,3 +1,43 @@
 .wrapper {
-  padding: 200px 50px 50px 350px;
+  background-color: $color-light;
+  width: 82%;
+  height: 1200px;
+  margin: 78px 10px 0 210px;
+  padding: 0 15px;
+  box-shadow:0 1px 3px rgb(119, 119, 119);
+
+  .diagram {
+
+    h3 {
+      color: $color-grey;
+      font-size: 20px;
+      padding: 15px 20px;
+      border-bottom: 1px solid $color-grey;
+    }
+
+    .date {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: flex-end;
+      align-content: center;
+      width: 50%;
+
+      .date-table {
+        border: 1px solid $color-grey;
+        width: 200px;
+      
+          .date-content {
+            font-size: 18px;
+          }
+        }
+        
+      .button i {
+        color: $color-grey;
+      }
+    }
+
+  }
 }

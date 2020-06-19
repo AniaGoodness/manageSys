@@ -1,15 +1,124 @@
 .sidebar {
   position: fixed;
+  top: 0;
   left: 0;
-  width: 30%;
+  bottom: 0;
+  background-color: $color-background;
+  left: 0;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  color: $color-light;
 
-  ul {
-    list-style-type: none;
-    
-    li {
+  .sidebar-header {
+    padding: 0 12px;
+    margin-top: 10px;
+    align-items: center;
+    height: 60px;
+
+    .logo {
+      display: flex;
+      flex-direction: row;
       
       img {
-        max-height: 15px;
+        display: flex;
+        width: 70%;
+        height: auto;
+        margin-right: 0;
+      }
+
+      i {
+        float: left;
+        width: 10%;
+        padding-left: 20px;
+        font-size: 20px;
+        align-self: center;
+      }
+    }
+  }
+
+  .menu-link {
+    display: flex;
+    -webkit-box-align: center;
+    align-content: center;
+
+  }
+
+  ul {
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    
+    li {
+
+      a {
+        text-decoration: none;
+        padding: 5px 0;
+        align-content: center;
+        text-align: center;
+      }
+
+      a .title {
+        color: $color-main;
+        padding: 0 10px;
+      }
+
+      img {
+        max-height: 12px;
+        padding: 0 10px;
+        color: $color-light;
+      }
+    }
+  }
+  .manager {
+    padding: 0 12px;
+    margin-top: 10px;
+
+    h4 {
+      text-align: center;
+    }
+    
+    .content-manager {
+      height: auto;
+      display: flex;
+      flex-direction: row;
+
+      .avatar {
+        width: 60px;
+        height: auto;
+      }
+
+      .name {
+        color: $color-blue;
+        height: auto;
+        display:table-cell;
+        vertical-align: middle;
+        padding-left: 10px;
+      }
+
+      .css-dot {
+        font-weight: bold;
+        color: $color-green;
+        font-size:40px;
+      }
+
+      .css-dot::after { 
+      content:"\00b7";
+      }
+
+      .circle-dot {
+      position: relative;
+      }
+
+      .circle-dot::after {
+        content: '';
+        width: 7px;
+        height: 7px;
+        background: $color-green;
+        border-radius: 50%;
       }
     }
   }

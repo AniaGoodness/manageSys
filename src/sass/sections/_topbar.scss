@@ -1,5 +1,31 @@
 .topbar {
   position: fixed;
+  display: flex;
+  flex-direction: row;
   top: 0;
   width: 70%;
+  background-color: $color-light;
+  height: 60px;
+  width: 100%;
+  box-shadow:0 1px 3px rgb(119, 119, 119);
+
+  .topbar-wallet {
+    margin-left: 50%;
+  }
+
+  .topbar-quit {
+
+    .menu-icon {
+
+      .icon {
+        height: 60px;
+        display:table-cell;
+        vertical-align: middle;
+
+        img {
+          height: 20px;
+        }
+      }
+    }
+  }
 }

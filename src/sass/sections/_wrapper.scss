@@ -4,10 +4,9 @@
   height: 1200px;
   margin: 78px 10px 0 210px;
   padding: 0 15px;
-  box-shadow:0 1px 3px rgb(119, 119, 119);
+  box-shadow: 0 1px 3px rgb(119, 119, 119);
 
   .diagram {
-
     h3 {
       color: $color-grey;
       font-size: 20px;
@@ -28,16 +27,15 @@
       .date-table {
         border: 1px solid $color-grey;
         width: 200px;
-      
-          .date-content {
-            font-size: 18px;
-          }
-        }
-        
+      }
+
+      .date-content {
+        font-size: 18px;
+      }
+
       .button i {
         color: $color-grey;
       }
     }
-
   }
 }

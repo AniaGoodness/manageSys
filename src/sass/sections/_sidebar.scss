@@ -53,6 +53,7 @@
     align-content: center;
     
     li {
+      justify-content: center;
 
       a {
         text-decoration: none;
@@ -73,6 +74,7 @@
       }
     }
   }
+
   .manager {
     padding: 0 12px;
     margin-top: 10px;
@@ -94,7 +96,7 @@
       .name {
         color: $color-blue;
         height: auto;
-        display:table-cell;
+        display: table-cell;
         vertical-align: middle;
         padding-left: 10px;
       }
@@ -102,15 +104,15 @@
       .css-dot {
         font-weight: bold;
         color: $color-green;
-        font-size:40px;
+        font-size: 40px;
       }
 
       .css-dot::after { 
-      content:"\00b7";
+        content: "\00b7";
       }
 
       .circle-dot {
-      position: relative;
+        position: relative;
       }
 
       .circle-dot::after {

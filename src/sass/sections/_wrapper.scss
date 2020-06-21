@@ -29,16 +29,19 @@
         background-color: $color-light;
         line-height: 28px;
 
-        input {
+      .border-left {
+        padding-left: 10px;
+        width: 140px;
+        border: none;
+        background-color: $color-light;
+        border-right: 1px solid $color-grey;
+      }
+
+        .noborder {
           padding-left: 10px;
           width: 140px;
           border: none;
           background-color: $color-light;
-        }
-
-        .border-left {
-          border-right: 1px solid $color-grey;
-
         }
       }
 
@@ -67,14 +70,6 @@
         align-items: center;
         width: 25%;
         text-align: right;
-
-        .value {
-          text-align: right;
-          display: flex;
-          width: 25%;
-          flex-direction: column;
-          justify-content: center;
-        }
       }
 
       .column2 {
@@ -83,6 +78,14 @@
         align-items: center;
         width: 25%;
         text-align: right;
+
+        .value {
+          text-align: right;
+          display: flex;
+          width: 25%;
+          flex-direction: column;
+          justify-content: center;
+        }
       }
     }
   }

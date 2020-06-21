@@ -1,15 +1,25 @@
 .wrapper {
-  background-color: $color-light;
+  background-color: #ffffff;
   width: 100%;
   padding: 0 15px;
   box-shadow: 0 1px 3px rgb(119, 119, 119);
 
+  h3 {
+    color: $color-grey;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-bottom: 1px solid $color-main;
+  }
+
   .diagram {
-    h3 {
+
+    h5 {
       color: $color-grey;
-      font-size: 20px;
-      padding: 15px 20px;
-      border-bottom: 1px solid $color-grey;
+      font-size: 16px;
+      display: flex;
+      width: 40%;
+      justify-content: flex-end;
+
     }
 
     .date {
@@ -19,29 +29,27 @@
       justify-content: center;
       align-content: center;
       align-items: flex-end;
-      align-content: center;
       width: 100%;
+      margin: 30px 0;
 
       .date-table {
         border: 1px solid $color-grey;
         width: 310px;
         height: 28px;
-        background-color: $color-light;
+        background-color: #ffffff;
         line-height: 28px;
 
-      .border-left {
-        padding-left: 10px;
-        width: 140px;
-        border: none;
-        background-color: $color-light;
-        border-right: 1px solid $color-grey;
-      }
-
+        .border-left {
+          padding-left: 10px;
+          width: 140px;
+          border: none;
+          border-right: 1px solid $color-grey;
+        }
+        
         .noborder {
           padding-left: 10px;
           width: 140px;
           border: none;
-          background-color: $color-light;
         }
       }
 
@@ -63,20 +71,30 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: flex-end;
+      border-top: 1px solid $color-main;
+      padding-top: 20px;
 
       .column1 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 25%;
+        width: 15%;
         text-align: right;
+
+        .type {
+          color: $color-grey;
+          font-size: 16px;
+        }
       }
 
       .column2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 25%;
+        width: 15%;
         text-align: right;
 
         .value {
@@ -87,6 +105,119 @@
           justify-content: center;
         }
       }
+    }
+    .features {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      margin: 20px 0;
+      background-color: #ffffff;
+
+      .point-title {
+        color: $color-grey;
+        line-height: 34px;
+        text-align: center;
+      }
+
+      .button-dev {
+        display: flex;
+        flex-direction: row;
+        width: 10%;
+        line-height: 32px;
+        background-color: $color-light;
+        margin-right: 3%;
+        text-align: center;
+        border-radius: 3px;
+        justify-content: center;
+
+        .point-blue {
+          background-color: $color-blue;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          line-height: 34px;
+          margin: 10px 6px 0 0;
+        }
+
+        .point-orange {
+          background-color: $color-button;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          margin: 10px 6px 0 0;
+
+        }
+      }
+
+      .button-inact {
+        line-height: 28px;
+        display: flex;
+        flex-direction: row;
+        width: 10%;
+
+        .point-green {
+          background-color: $color-green;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          margin: 10px 6px 0 0;
+        }
+      }
+    }
+    .diagram-image {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      margin: 20px 0;
+    }
+  }
+  .links {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    .add {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+
+      .button-add {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 80px;
+        height: 36px;
+        color: #ffffff;
+        background-color: $color-button;
+        border-radius: 3px;
+      }
+    }
+
+    .link-base {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .content-table {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .link-list {
+          display: flex;
+          width: 50%;
+        }
+
+        .address {
+          display: flex;
+          width: 50%;
+
+        }
+      } 
     }
   }
 }

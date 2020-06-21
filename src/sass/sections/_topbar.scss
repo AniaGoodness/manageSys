@@ -10,12 +10,81 @@
   box-shadow: 0 1px 3px rgb(119, 119, 119);
 
   .topbar-wallet {
-    margin-left: 50%;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: 60px;
+    margin-left: 65%;
+    margin-right: 5px;
+    border-right: 1px solid $color-main;
+
+    .icon {
+      margin-right: 5px;
+    }
+  }
+
+  i {
+    color: $color-grey;
+    font-size: 20px;
+    width: auto;
+    line-height: 60px;
+    margin: 0 10px;
+  
+  }
+  .css-dot {
+    border-right: 1px solid $color-main;
+    line-height: 60px;
+    display: flex;
+    flex-direction: row;
+    color: $color-button;
+    font-size: 50px;
+  }
+  
+  .css-dot::after { 
+    content: "\00b7";
+    position: absolute;
+    left: 74%;
+    bottom: 8px;
+  }
+
+  .circle-dot {
+    position: relative;
+  }
+
+  .circle-dot::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+  .topbar-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 0 10px;
+    line-height: 60px;
+    color: $color-blue;
+    border-right: 1px solid $color-main;
+
+    img {
+      width: auto;
+      height: 20px;
+      margin-right: 10px;
+
+
+    }
   }
 
   .topbar-quit {
+    display: flex;
+    flex-direction: row;
     margin-right: 10px;
+    justify-content: center;
+    align-items: center;
 
     .menu-icon {
       margin-right: 20px;

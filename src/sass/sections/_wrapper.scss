@@ -12,7 +12,6 @@
   }
 
   .diagram {
-
     h5 {
       color: $color-grey;
       font-size: 16px;
@@ -62,6 +61,9 @@
         text-align: center;
         border-radius: 3px;
         margin-left: 10px;
+      }
+      .button i:hover {
+        background-color: $color-button-activ;
       }
     }
 
@@ -181,18 +183,18 @@
   background-color: #ffffff;
   width: 100%;
   padding: 0 15px;
-  box-shadow: 0 1px 3px rgb(119, 119, 119);  
+  box-shadow: 0 1px 3px rgb(119, 119, 119);
+
   padding-bottom: 30px;
 
   h3 {
-  color: $color-grey;
-  font-size: 20px;
-  padding: 15px 20px;
-  border-bottom: 1px solid $color-main;
+    color: $color-grey;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-bottom: 1px solid $color-main;
   }
   
   .links {
-  
     .add {
       display: flex;
       width: 100%;
@@ -211,6 +213,9 @@
         background-color: $color-button;
         border-radius: 3px;
       }      
+      .button-add:hover {
+        background-color: $color-button-activ;
+      }
     }
 
     .link-base {
@@ -224,25 +229,30 @@
       align-items: center;
 
       a {
-       text-decoration: none;
+        text-decoration: none;
       }
 
       .column-list {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        background-color: #ffffff;
         width: 20%;
         margin: 0;
 
         h4 {
-        color: $color-grey;
-        margin: 0;
-        line-height: 40px;
+          color: $color-grey;
+          margin: 0;
+          line-height: 40px;
         }
 
         div {
           height: 40px;
           border-bottom: 1px solid $color-main;
+        }
+        h4:hover {
+          background-color: $color-main;
+          color: $color-blue;
         }
       }
 
@@ -256,6 +266,9 @@
         div {
           height: 40px;
           border-bottom: 1px solid $color-main;
+        }
+        div:hover {
+          background-color: $color-main;
         }
         
         span {
@@ -276,8 +289,9 @@
           border-bottom: 1px solid $color-main;
           line-height: 40px;
         }
-
-
+        div:hover {
+          background-color: $color-main;
+        }
       } 
     }
   }

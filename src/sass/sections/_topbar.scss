@@ -30,8 +30,12 @@
     width: auto;
     line-height: 60px;
     margin: 0 10px;
-  
   }
+
+  div:hover {
+    background-color: $color-main;
+  }
+
   .css-dot {
     border-right: 1px solid $color-main;
     line-height: 60px;
@@ -65,7 +69,6 @@
     justify-content: center;
     align-items: center;
     width: 200px;
-    margin: 0 10px;
     line-height: 60px;
     color: $color-blue;
     border-right: 1px solid $color-main;
@@ -82,7 +85,8 @@
   .topbar-quit {
     display: flex;
     flex-direction: row;
-    margin-right: 10px;
+    width: 100px;
+    padding-right: 10px;
     justify-content: center;
     align-items: center;
 

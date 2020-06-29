@@ -223,16 +223,16 @@
     }
 
     table {
-    margin: 20px 0;
-    width: 70%;
-    border-top: 1px solid $color-main;
+      margin: 20px 0;
+      width: 70%;
+      border-top: 1px solid $color-main;
 
-      th {
+      td {
         text-align: left;
         border-bottom: 1px solid $color-main;
       }
 
-      th:hover {
+      tr:hover {
         background-color: $color-main;
         color: $color-blue;
       }

@@ -154,71 +154,76 @@
 
 /* Media */
 @media (max-width: 767px) {
-  .hidden {
-    display: block;
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 20px 0;
-
-    .topbar-account {
-      display: flex;
+  .sidebar {
+    margin-left: 0;
+    transition: 0.5s;
+    &.hidden {
+      display: block;
       width: 100%;
-      height: 25px;
-      margin-bottom: 10px;
-      flex-direction: row;
-      line-height: 25px;
-      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
       justify-content: center;
-      position: relative;
+      align-items: center;
+      align-content: center;
+      margin-left: -125px;
 
-      p {
-        font-size: 12px;
-      }
-      img {
-        width: auto;
-        height: 20px;
-        margin: 0 10px;
+      .topbar-account {
+        display: flex;
+        width: 100%;
+        height: 25px;
+        margin-bottom: 10px;
+        flex-direction: row;
         line-height: 25px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        p {
+          font-size: 12px;
+        }
+
+        img {
+          width: auto;
+          height: 20px;
+          margin: 0 10px;
+          line-height: 25px;
+        }
       }
-    }
 
-    i {
-      color: $color-grey;
-      font-size: 20px;
-      width: auto;
-      line-height: 60px;
-      margin: 0 10px;
-    }
+      i {
+        color: $color-grey;
+        font-size: 20px;
+        width: auto;
+        line-height: 60px;
+        margin: 0 10px;
+      }
   
-    .css-dot {
-      line-height: 60px;
-      display: flex;
-      flex-direction: row;
-      color: $color-button;
-      font-size: 50px;
-      position: relative;
-    }
+      .css-dot {
+        line-height: 60px;
+        display: flex;
+        flex-direction: row;
+        color: $color-button;
+        font-size: 50px;
+        position: relative;
+      }
   
-    .css-dot::after { 
-      content: "\00b7";
-      position: absolute;
-      left: 50%;
-     bottom: 8px;
-    }
+      .css-dot::after { 
+        content: "\00b7";
+        position: absolute;
+        left: 50%;
+        bottom: 8px;
+      }
 
-    .circle-dot {
-      position: absolute;
-    }
+      .circle-dot {
+        position: absolute;
+      }
 
-    .circle-dot::after {
-      content: '';
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
+      .circle-dot::after {
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+      }
     }
   }
 }

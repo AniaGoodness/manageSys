@@ -223,9 +223,10 @@
     }
 
     table {
-      margin: 20px 0;
+      margin: 20px auto;
       width: 70%;
       border-top: 1px solid $color-main;
+      border-spacing: 0;
 
       td {
         text-align: left;
@@ -235,6 +236,7 @@
       tr:hover {
         background-color: $color-main;
         color: $color-blue;
+
       }
 
       .link-list {

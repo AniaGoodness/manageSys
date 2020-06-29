@@ -114,3 +114,9 @@
     }
   }
 }
+/* Media */
+@media (max-width: 767px) {
+  .topbar {
+    display: none;
+  }
+}

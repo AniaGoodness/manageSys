@@ -15,12 +15,21 @@
     justify-content: center;
     align-items: center;
     text-align: 60px;
-    margin-left: 65%;
+    margin-left: 70%;
     margin-right: 5px;
+    padding-right: 5px;
     border-right: 1px solid $color-main;
 
     .icon {
       margin-right: 5px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 0 3px;
+    }
+
+    span {
+      padding: 0 3px;
     }
   }
 
@@ -43,17 +52,18 @@
     flex-direction: row;
     color: $color-button;
     font-size: 50px;
+    position: relative;
   }
   
   .css-dot::after { 
     content: "\00b7";
     position: absolute;
-    left: 74%;
+    left: 50%;
     bottom: 8px;
   }
 
   .circle-dot {
-    position: relative;
+    position: absolute;
   }
 
   .circle-dot::after {
@@ -68,7 +78,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    min-width: 166px;
+    position: relative;
     line-height: 60px;
     color: $color-blue;
     border-right: 1px solid $color-main;
@@ -77,8 +88,6 @@
       width: auto;
       height: 20px;
       margin-right: 10px;
-
-
     }
   }
 

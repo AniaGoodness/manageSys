@@ -175,33 +175,6 @@
         text-align: center;
       }
 
-      .button-dev {
-        display: flex;
-        flex-direction: row;
-        width: 10%;
-        height: 35px;
-        line-height: 32px;
-        background-color: $color-light;
-        margin-right: 3%;
-        text-align: center;
-        border-radius: 3px;
-        justify-content: center;
-
-        .point-blue {
-          border-radius: 50%;
-          line-height: 34px;
-        }
-
-        .point-orange {
-          background-color: $color-button;
-          width: 14px;
-          height: 14px;
-          border-radius: 50%;
-          margin: 10px 6px 0 0;
-
-        }
-      }
-
       .button-inact {
         line-height: 28px;
         display: flex;
@@ -216,14 +189,6 @@
           margin: 10px 6px 0 0;
         }
       }
-    }
-
-    .diagram-image {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      justify-content: center;
-      margin: 20px 0;
     }
   }
 }

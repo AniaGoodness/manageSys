@@ -3,12 +3,15 @@ document.querySelector('.hamburger').addEventListener('click', function (e) {
   document.querySelector('.sidebar').classList.toggle('hide');
 });
 
+/* MODAL */
+
 function closeModal() {
   document.getElementById('overlay').classList.remove('show');
 }
-document.querySelectorAll('#overlay .js--close-modal').forEach(function (btn) {
+document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
+    console.log(btn);
     closeModal();
   });
 });

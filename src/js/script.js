@@ -35,6 +35,7 @@ function openModal(modal) {
 openModal('#myModal');
 /* CHART */
 var ctx = document.getElementById('myChart').getContext('2d');
+// eslint-disable-next-line no-undef
 var chart = new Chart(ctx, {
   
   // 1

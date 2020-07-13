@@ -35,7 +35,8 @@ function openModal(modal) {
 openModal('#myModal');
 /* CHART */
 var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {  
+var chart = new Chart(ctx, {
+  
   // 1
   type: 'bar',
   data: {
@@ -67,3 +68,4 @@ var chart = new Chart(ctx, {
     }]
   },
 });
+console.log(chart);

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+    <div class="topbar-wallet">
+      <p class="icon"><img src="images/icons/wallet.png" alt="wallet">
+      <span>$1,500.00</span>
+    </div>
+    <div class="css-dot">
+      <i class="far fa-bell"></i>
+    </div>
+    <div class="topbar-account">
+      <img src="images/icons/profile.png" alt="profile">
+      <p class="name">Leonardo Dicaprio</p>
+    </div>
+    <div class="topbar-quit">
+      <a class="topbar-link" href="#">
+        <p class="icon">
+          <img src="images/icons/quit.png" alt="quit">
+        </p>
+      </a>
+    </div>
+
+    </header>
+    <header class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo">
+        <i class="fas fa-bars hamburger"></i>
+        <div class="nav">
+
+        </div>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="manu-item">
+        <a class="menu-link" href="#">
+          <img class="menu-icon" src="images/icons/general.png" alt="general">
+          <span class="title">General</span>
+        </a>
+      </li>
+      <li class="manu-item">
+        <a class="menu-link" href="#">
+          <img class="menu-icon" src="images/icons/details.png" alt="details">
+          <span class="title">Details</span>
+        </a>
+      </li>
+      <li class="manu-item">
+        <a class="menu-link" href="#">
+          <img class="menu-icon" src="images/icons/links.png" alt="links">
+          <span class="title">Links</span>
+        </a>
+      </li>
+      <li class="manu-item">
+        <a class="menu-link" href="#">
+          <img class="menu-icon" src="images/icons/banners.png" alt="banner">
+          <span class="title">Banners</span>
+        </a>
+      </li>
+      <li class="manu-item">
+        <a class="menu-link" href="#">
+          <img class="menu-icon" src="images/icons/personaldata.png" alt="data">
+          <span class="title">Personal data</span>
+        </a>
+      </li>
+      <li class="manu-item">
+        <a class="menu-link" href="#">
+          <img class="menu-icon" src="images/icons/payout.png" alt="payout">
+          <span class="title">Payout</span>
+        </a>
+      </li>
+      <li class="manu-item">
+        <a class="menu-link" href="#">
+          <img class="menu-icon" src="images/icons/postback.png" alt="post">
+          <span class="title">Postback</span>
+        </a>
+      </li>
+    </ul>
+    <div class="manager">
+      <h4>YOUR MANAGER</h4>
+      <div class="content-manager">
+        <div class="css-dot">
+          <img class="avatar" src="images/icons/manager.png" alt="picture">
+        </div>
+        <p class="name">Mikhael E.</p>
+      </div>
+    </div>
+    <div class="hidden">
+      <div class="sidebar-wallet">
+        <p class="icon"><img src="images/icons/wallet.png" alt="wallet">
+          <span>$1,500.00</span>
+      </div>
+      <div class="css-dot">
+        <i class="far fa-bell"></i>
+      </div>
+      <div class="sidebar-account">
+        <img src="images/icons/profile.png" alt="profile">
+        <p class="name">Leonardo Dicaprio</p>
+      </div>
+      <div class="sidebar-quit">
+        <a class="sidebar-link" href="#">
+          <p class="icon">
+            <img src="images/icons/quit.png" alt="quit">
+          </p>
+        </a>
+      </div>
+    </div>
+    </header>
+    <section class="container-fluid">
+    <div class="diagram">
+      <h3>GENERAL STATISTIC</h3>
+      <div class="date">
+        <div class="date-table">
+        <input type="date" class="border-left">
+        <input type="date" class="noborder">
+        <img src="images/icons/calendar.png" alt="calendar">
+        </div>
+        <div class="button">
+          <i class="fas fa-redo-alt"></i>
+        </div>
+      </div>
+      <div class="list">
+        <div class="column1">
+          <div class="type">Visit Signups</div>
+          <div class="type">FTD</div>
+        </div>
+        <div class="column2">
+          <span class="value">124</span>
+          <span class="value">445</span>
+        </div>
+        <div class="column1">
+          <div class="type">Net deposit</div>
+          <div class="type">Turn over</div>
+        </div>
+        <div class="column2">
+          <span class="value">564</span>
+          <span class="value">432</span>
+        </div>
+      </div>
+      <div>
+        <h5>Earnings chart</h5>
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    </section>
+    <section class="wrapper-links">
+    <div class="links">
+      <h3>LINKS</h3>
+      <div class="add">
+        <div class="button-add">
+        + add new
+        </div>
+      </div>
+      <div class="scroll-wrapper">
+        <table>
+          <tr>
+            <a href="#" class="btn">
+              <td class="link-list">Home page</td>
+              <td class="address">http://www.homepage.com</td>
+              <td>
+                <img class="link2" src="images/icons/links2.png" alt="link2">
+                <i class="far fa-trash-alt"></i>
+              </td>
+            </a>
+          </tr>
+          <tr>
+            <a href="#" class="btn">
+              <td class="link-list">Currently offer</td>
+              <td class="address">http://www.currently.com</td>
+              <td>
+                <img class="link2" src="images/icons/links2.png" alt="link2">
+                <i class="far fa-trash-alt"></i>
+              </td>
+            </a>
+          </tr>
+          <tr>
+            <a href="#" class="btn">
+              <td class="link-list">Blurpix</td>
+              <td class="address">http://www.blurpix.com</td>
+              <td>
+                <img class="link2" src="images/icons/links2.png" alt="link2">
+                <i class="far fa-trash-alt"></i>
+              </td>
+            </a>
+          </tr>
+          <tr>
+            <a href="#" class="btn">
+              <td class="link-list">Your site</td>
+              <td class="address">http://www.yoursite.com</td>
+              <td>
+                <img class="link2" src="images/icons/links2.png" alt="link2">
+                <i class="far fa-trash-alt"></i>
+              </td>
+            </a>
+          </tr>
+          <tr>
+            <a href="#" class="btn">
+              <td class="link-list">Google</td>
+              <td class="address">http://www.google.com</td>
+              <td>
+                <img class="link2" src="images/icons/links2.png" alt="link2">
+                <i class="far fa-trash-alt"></i>
+              </td>
+            </a>
+          </tr>
+          <tr>
+            <a href="#" class="btn">
+              <td class="link-list">Facebook</td>
+              <td class="address">http://www.facebook.com</td>
+              <td>
+                <img class="link2" src="images/icons/links2.png" alt="link2">
+                <i class="far fa-trash-alt"></i>
+              </td>
+            </a>
+          </tr>
+        </table>
+      <div class="add">
+        <div class="button-add">
+          + add new
+        </div>
+      </div>
+    </div>
+    </section>
+    <div class="overlay" id="overlay">
+        <div class="modal" id="myModal">
+          <div class="btn-close js--close-modal">x</div>
+    
+          <h4>Witaj w modalu!</h4>
+          <p>Lorem ipsum dolor sit amet...</p>
+    
+          <button class="js--close-modal">Okay</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+  </div>
+</body>
+</html>

@@ -13,3 +13,11 @@ body {
   color: $color-dark;
 }
 
+/* Media */
+@media (max-width: 767px) {
+
+  body {
+    padding: 0;
+    padding-left: 50px;
+  }
+}

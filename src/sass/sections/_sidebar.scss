@@ -245,11 +245,11 @@
 /* Media */
 @media (max-width: 767px) {
   .sidebar {
-    margin-left: 0;
+    margin-left: -125px;
     transition: 0.5s;
 
     &.hide {
-      margin-left: -125px;
+      margin-left: 0;
     }
 
     .hidden {
